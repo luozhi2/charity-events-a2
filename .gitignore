@@ -1,0 +1,42 @@
+# =====================================================================
+#  PROG2002 Assessment 2 - what must NOT be committed to GitHub
+# =====================================================================
+
+# ---- The local MySQL server and its data (about 1.1 GB) -------------
+# The database is recreated by importing database/charityevents_db.sql,
+# so neither the server binaries nor the data files belong in a repo.
+mysql/
+
+# ---- Installed dependencies ----------------------------------------
+node_modules/
+api/node_modules/
+tools/node_modules/
+
+# ---- Credentials ---------------------------------------------------
+# Only api/.env.example is committed; the real .env never is.
+.env
+api/.env
+
+# ---- Build and cache artefacts -------------------------------------
+__pycache__/
+*.pyc
+.npm-cache/
+.npmcache/
+.tmp/
+.stage/
+.verify/
+
+# ---- Word / Office lock files --------------------------------------
+~$*
+
+# ---- OS and editor noise -------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ---- Logs ----------------------------------------------------------
+*.log
+npm-debug.log*
+mysql/error.log
