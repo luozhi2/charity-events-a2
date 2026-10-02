@@ -1,0 +1,21 @@
+{
+  "name": "prog2002-a2-charity-events-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PROG2002 Web Development II - Assessment 2 - RESTful API for the Charity Events website (Node.js + ExpressJS + MySQL).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test:db": "node scripts/test_connection.js"
+  },
+  "keywords": ["prog2002", "charity-events", "express", "mysql", "rest-api"],
+  "author": "Student",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0"
+  }
+}
