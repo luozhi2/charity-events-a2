@@ -1,0 +1,55 @@
+[
+  {
+    "name": "01-home-desktop",
+    "file": "C:\\Users\\11757\\Desktop\\liangyuez\\tools\\screenshots\\01-home-desktop.jpg",
+    "url": "/index.html",
+    "width": 1440,
+    "height": 4922
+  },
+  {
+    "name": "02-home-mobile",
+    "file": "C:\\Users\\11757\\Desktop\\liangyuez\\tools\\screenshots\\02-home-mobile.jpg",
+    "url": "/index.html",
+    "width": 420,
+    "height": 7000
+  },
+  {
+    "name": "03-search-default",
+    "file": "C:\\Users\\11757\\Desktop\\liangyuez\\tools\\screenshots\\03-search-default.jpg",
+    "url": "/search.html",
+    "width": 1440,
+    "height": 3672
+  },
+  {
+    "name": "04-search-filtered",
+    "file": "C:\\Users\\11757\\Desktop\\liangyuez\\tools\\screenshots\\04-search-filtered.jpg",
+    "url": "/search.html?categoryId=1&status=upcoming",
+    "width": 1440,
+    "height": 1979
+  },
+  {
+    "name": "05-search-no-results",
+    "file": "C:\\Users\\11757\\Desktop\\liangyuez\\tools\\screenshots\\05-search-no-results.jpg",
+    "url": "/search.html?city=Reykjavik",
+    "width": 1440,
+    "height": 1529
+  },
+  {
+    "name": "06-event-detail",
+    "file": "C:\\Users\\11757\\Desktop\\liangyuez\\tools\\screenshots\\06-event-detail.jpg",
+    "url": "/event.html?eventId=1",
+    "width": 1440,
+    "height": 1941
+  },
+  {
+    "name": "07-event-modal",
+    "file": "C:\\Users\\11757\\Desktop\\liangyuez\\tools\\screenshots\\07-event-modal.jpg",
+    "url": "/event.html?eventId=2",
+    "width": 1440,
+    "height": 1941
+  },
+  {
+    "name": "08-api-search-json",
+    "width": 1100
+  }
+]

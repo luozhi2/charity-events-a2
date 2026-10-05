@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 730" width="940" height="730" role="img" aria-label="Entity relationship diagram">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5A6B78"/>
+    </marker>
+    <marker id="arrowStart" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 10 0 L 0 5 L 10 10 z" fill="#5A6B78"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E08A2F"/>
+    </marker>
+  </defs>
+  <rect width="940" height="730" fill="#FFFFFF"/>
+<text x="470.0" y="28" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0A2A48" text-anchor="middle" font-weight="bold">Entity relationship diagram — charityevents_db</text>
+<rect x="40" y="70" width="250" height="254" rx="6" fill="#FFFFFF" stroke="#0F3C66" stroke-width="2"/>
+<rect x="40" y="70" width="250" height="30" rx="6" fill="#0F3C66" stroke="#0F3C66" stroke-width="2"/>
+<rect x="40" y="88" width="250" height="12" rx="0" fill="#0F3C66" stroke="#0F3C66" stroke-width="0"/>
+<text x="165.0" y="91" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="bold">organisations</text>
+<text x="50" y="119" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#E08A2F" text-anchor="start" font-weight="bold">PK</text>
+<text x="86" y="119" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">organisation_id  INT AI</text>
+<rect x="41" y="126" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="50" y="141" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold">UQ</text>
+<text x="86" y="141" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">name  VARCHAR(120)</text>
+<text x="50" y="163" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="86" y="163" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">mission_statement</text>
+<rect x="41" y="170" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="50" y="185" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="86" y="185" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">about_text  TEXT</text>
+<text x="50" y="207" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="86" y="207" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">email  VARCHAR(120)</text>
+<rect x="41" y="214" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="50" y="229" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="86" y="229" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">phone  VARCHAR(30)</text>
+<text x="50" y="251" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="86" y="251" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">website  VARCHAR(200)</text>
+<rect x="41" y="258" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="50" y="273" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="86" y="273" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">city  VARCHAR(80)</text>
+<text x="50" y="295" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="86" y="295" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">logo_url  VARCHAR(300)</text>
+<rect x="41" y="302" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="50" y="317" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="86" y="317" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">created_at  TIMESTAMP</text>
+<rect x="360" y="70" width="250" height="452" rx="6" fill="#FFFFFF" stroke="#1D5B95" stroke-width="2"/>
+<rect x="360" y="70" width="250" height="30" rx="6" fill="#1D5B95" stroke="#1D5B95" stroke-width="2"/>
+<rect x="360" y="88" width="250" height="12" rx="0" fill="#1D5B95" stroke="#1D5B95" stroke-width="0"/>
+<text x="485.0" y="91" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="bold">events</text>
+<text x="370" y="119" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#E08A2F" text-anchor="start" font-weight="bold">PK</text>
+<text x="406" y="119" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">event_id  INT AI</text>
+<rect x="361" y="126" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="370" y="141" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#17998F" text-anchor="start" font-weight="bold">FK</text>
+<text x="406" y="141" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">organisation_id</text>
+<text x="370" y="163" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#17998F" text-anchor="start" font-weight="bold">FK</text>
+<text x="406" y="163" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">category_id</text>
+<rect x="361" y="170" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="370" y="185" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="185" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">event_name</text>
+<text x="370" y="207" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="207" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">short_summary</text>
+<rect x="361" y="214" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="370" y="229" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="229" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">full_description  TEXT</text>
+<text x="370" y="251" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="251" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">purpose  VARCHAR(500)</text>
+<rect x="361" y="258" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="370" y="273" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="273" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">event_date  DATE</text>
+<text x="370" y="295" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="295" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">start_time / end_time</text>
+<rect x="361" y="302" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="370" y="317" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="317" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">location_name / address</text>
+<text x="370" y="339" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="339" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">suburb / city</text>
+<rect x="361" y="346" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="370" y="361" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="361" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">ticket_price  DECIMAL(8,2)</text>
+<text x="370" y="383" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="383" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">is_free  TINYINT(1)</text>
+<rect x="361" y="390" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="370" y="405" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="405" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">goal_amount  DECIMAL(10,2)</text>
+<text x="370" y="427" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="427" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">raised_amount  DECIMAL(10,2)</text>
+<rect x="361" y="434" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="370" y="449" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="449" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">capacity  INT</text>
+<text x="370" y="471" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="471" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">image_url  VARCHAR(300)</text>
+<rect x="361" y="478" width="248" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="370" y="493" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="493" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">status  ENUM(active/suspended/cancelled)</text>
+<text x="370" y="515" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="406" y="515" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">created_at / updated_at</text>
+<rect x="680" y="70" width="220" height="100" rx="6" fill="#FFFFFF" stroke="#6B3FA0" stroke-width="2"/>
+<rect x="680" y="70" width="220" height="30" rx="6" fill="#6B3FA0" stroke="#6B3FA0" stroke-width="2"/>
+<rect x="680" y="88" width="220" height="12" rx="0" fill="#6B3FA0" stroke="#6B3FA0" stroke-width="0"/>
+<text x="790.0" y="91" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="bold">categories</text>
+<text x="690" y="119" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#E08A2F" text-anchor="start" font-weight="bold">PK</text>
+<text x="726" y="119" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">category_id  INT AI</text>
+<rect x="681" y="126" width="218" height="22" rx="0" fill="#F2F5F8" stroke="#F2F5F8" stroke-width="0"/>
+<text x="690" y="141" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold">UQ</text>
+<text x="726" y="141" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">category_name</text>
+<text x="690" y="163" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-weight="bold"></text>
+<text x="726" y="163" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">description  VARCHAR(255)</text>
+<line x1="290" y1="200" x2="356" y2="200" stroke="#0F3C66" stroke-width="2.5"/>
+<text x="323" y="180" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0F3C66" text-anchor="middle" font-weight="bold">1</text>
+<text x="323" y="222" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0F3C66" text-anchor="middle" font-weight="bold">M</text>
+<text x="323" y="246" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle" font-style="italic">hosts</text>
+<line x1="614" y1="200" x2="676" y2="200" stroke="#6B3FA0" stroke-width="2.5"/>
+<text x="645" y="180" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#6B3FA0" text-anchor="middle" font-weight="bold">M</text>
+<text x="645" y="222" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#6B3FA0" text-anchor="middle" font-weight="bold">1</text>
+<text x="645" y="246" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle" font-style="italic">classifies</text>
+<rect x="40" y="590" width="860" height="118" rx="8" fill="#F2F5F8" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="58" y="612" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F3C66" text-anchor="start" font-weight="bold">Referential integrity and constraints</text>
+<text x="58" y="634" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">fk_events_organisation    events.organisation_id  →  organisations.organisation_id        ON UPDATE CASCADE    ON DELETE RESTRICT</text>
+<text x="58" y="652" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">fk_events_category        events.category_id  →  categories.category_id                         ON UPDATE CASCADE    ON DELETE RESTRICT</text>
+<text x="58" y="670" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">chk_events_amounts    goal_amount ≥ 0  AND  raised_amount ≥ 0            chk_events_ticket    ticket_price ≥ 0</text>
+<text x="58" y="688" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="start">UNIQUE    organisations.name,  categories.category_name            INDEX    event_date, city, status, category_id, organisation_id</text>
+<text x="58" y="706" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="start" font-style="italic">PK = primary key   ·   FK = foreign key   ·   UQ = unique   ·   AI = AUTO_INCREMENT        Engine: InnoDB        Charset: utf8mb4</text>
+<rect x="672" y="200" width="228" height="116" rx="6" fill="#FDF1E0" stroke="#E08A2F" stroke-width="1.5"/>
+<text x="786" y="222" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8A5713" text-anchor="middle" font-weight="bold">Assessment 3 extension</text>
+<text x="786" y="244" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="middle">users  (1)</text>
+<text x="786" y="260" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#5A6B78" text-anchor="middle">↓</text>
+<text x="786" y="278" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="middle">registrations  (M)</text>
+<text x="786" y="294" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="middle">ticket purchases and</text>
+<text x="786" y="308" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="middle">donations against events</text>
+<rect x="672" y="336" width="228" height="88" rx="6" fill="#FDEAEE" stroke="#F2C2CD" stroke-width="1.5"/>
+<text x="786" y="358" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8C2137" text-anchor="middle" font-weight="bold">Policy enforcement</text>
+<text x="786" y="378" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="middle">status = "suspended"</text>
+<text x="786" y="394" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="middle">is retained for audit but</text>
+<text x="786" y="408" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="middle">filtered out by the API, so it</text>
+<text x="786" y="422" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="middle">never reaches the website</text>
+</svg>

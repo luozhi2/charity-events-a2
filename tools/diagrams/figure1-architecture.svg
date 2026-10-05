@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 620" width="940" height="620" role="img" aria-label="Three-tier architecture">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5A6B78"/>
+    </marker>
+    <marker id="arrowStart" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 10 0 L 0 5 L 10 10 z" fill="#5A6B78"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E08A2F"/>
+    </marker>
+  </defs>
+  <rect width="940" height="620" fill="#FFFFFF"/>
+<text x="470.0" y="30" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0A2A48" text-anchor="middle" font-weight="bold">Three-tier architecture of Charity Events Sydney</text>
+<rect x="40" y="55" width="580" height="150" rx="10" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="60" y="82" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0F3C66" text-anchor="start" font-weight="bold">1. CLIENT TIER  —  the browser</text>
+<rect x="62" y="96" width="168" height="92" rx="6" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="146" y="120" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#16232E" text-anchor="middle" font-weight="bold">index.html</text>
+<text x="146" y="141" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#5A6B78" text-anchor="middle">home.js</text>
+<text x="146" y="159" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle">Home page</text>
+<text x="146" y="177" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">upcoming event feed</text>
+<rect x="244" y="96" width="168" height="92" rx="6" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="328" y="120" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#16232E" text-anchor="middle" font-weight="bold">search.html</text>
+<text x="328" y="141" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#5A6B78" text-anchor="middle">search.js</text>
+<text x="328" y="159" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle">Search page</text>
+<text x="328" y="177" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">3 filter criteria</text>
+<rect x="426" y="96" width="168" height="92" rx="6" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="510" y="120" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#16232E" text-anchor="middle" font-weight="bold">event.html</text>
+<text x="510" y="141" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#5A6B78" text-anchor="middle">event.js</text>
+<text x="510" y="159" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle">Event detail page</text>
+<text x="510" y="177" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">?eventId=3</text>
+<rect x="640" y="55" width="260" height="68" rx="10" fill="#FFFFFF" stroke="#E08A2F" stroke-width="1.5"/>
+<text x="770" y="79" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#E08A2F" text-anchor="middle" font-weight="bold">Shared client modules</text>
+<text x="770" y="99" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle">api.js (fetch + Promises)  ·  ui.js (DOM)</text>
+<text x="770" y="115" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle">config.js (static content)</text>
+<rect x="640" y="133" width="260" height="72" rx="10" fill="#F2F5F8" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="770" y="157" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0F3C66" text-anchor="middle" font-weight="bold">Browser storage</text>
+<text x="770" y="177" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle">localStorage fallback for the</text>
+<text x="770" y="193" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle">selected event id</text>
+<line x1="330" y1="213" x2="330" y2="258" stroke="#E08A2F" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="346" y="220" width="470" height="30" rx="6" fill="#FDF1E0" stroke="#E08A2F" stroke-width="1.5"/>
+<text x="581" y="240" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8A5713" text-anchor="middle">HTTP GET  ·  /api/events/search?city=Sydney&amp;categoryId=1  ·  Accept: application/json</text>
+<rect x="40" y="262" width="860" height="176" rx="10" fill="#E3F4F1" stroke="#17998F" stroke-width="1.5"/>
+<text x="60" y="289" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0E6B62" text-anchor="start" font-weight="bold">2. SERVER TIER  —  Node.js 18 + ExpressJS (api/server.js)</text>
+<rect x="62" y="302" width="190" height="56" rx="6" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="157" y="325" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#16232E" text-anchor="middle" font-weight="bold">Express middleware</text>
+<text x="157" y="344" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">CORS · JSON · logger</text>
+<rect x="268" y="302" width="300" height="112" rx="6" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="418" y="325" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#16232E" text-anchor="middle" font-weight="bold">Route handlers</text>
+<text x="418" y="346" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#0F3C66" text-anchor="middle">routes/events.js</text>
+<text x="418" y="364" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">GET /api/events</text>
+<text x="418" y="380" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">GET /api/events/search</text>
+<text x="418" y="396" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">GET /api/events/:id</text>
+<text x="418" y="411" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">+ categories.js · organisations.js</text>
+<rect x="586" y="302" width="292" height="56" rx="6" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="732" y="325" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#16232E" text-anchor="middle" font-weight="bold">utils/eventMapper.js + dateUtils.js</text>
+<text x="732" y="344" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">row → JSON contract, upcoming/past, progress %</text>
+<rect x="586" y="370" width="292" height="44" rx="6" fill="#FFFFFF" stroke="#17998F" stroke-width="1.5"/>
+<text x="732" y="398" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#0E6B62" text-anchor="middle" font-weight="bold">event_db.js  ·  mysql2 connection pool</text>
+<rect x="62" y="370" width="190" height="44" rx="6" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="157" y="398" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#16232E" text-anchor="middle" font-weight="bold">Central error handler</text>
+<line x1="732" y1="438" x2="732" y2="480" stroke="#0F3C66" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="748" y="444" width="152" height="30" rx="6" fill="#FFFFFF" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="824" y="464" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#0F3C66" text-anchor="middle">parameterised SQL ( ? )</text>
+<rect x="40" y="484" width="860" height="112" rx="10" fill="#F1EAF8" stroke="#6B3FA0" stroke-width="1.5"/>
+<text x="60" y="511" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#6B3FA0" text-anchor="start" font-weight="bold">3. DATA TIER  —  MySQL 8  ·  database  charityevents_db</text>
+<rect x="90" y="524" width="180" height="52" rx="6" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="180" y="547" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#16232E" text-anchor="middle" font-weight="bold">organisations</text>
+<text x="180" y="565" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">PK organisation_id</text>
+<rect x="380" y="524" width="180" height="52" rx="6" fill="#FFFFFF" stroke="#6B3FA0" stroke-width="2"/>
+<text x="470" y="547" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#16232E" text-anchor="middle" font-weight="bold">events</text>
+<text x="470" y="565" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">PK event_id · 2 FK</text>
+<rect x="670" y="524" width="180" height="52" rx="6" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="760" y="547" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#16232E" text-anchor="middle" font-weight="bold">categories</text>
+<text x="760" y="565" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="middle">PK category_id</text>
+<line x1="272" y1="550" x2="376" y2="550" stroke="#6B3FA0" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="324" y="543" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#6B3FA0" text-anchor="middle">1 : M</text>
+<line x1="564" y1="550" x2="666" y2="550" stroke="#6B3FA0" stroke-width="2" marker-start="url(#arrowStart)"/>
+<text x="615" y="543" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#6B3FA0" text-anchor="middle">M : 1</text>
+<line x1="230" y1="484" x2="230" y2="445" stroke="#17998F" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="96" y="604" width="748" height="0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5"/>
+<rect x="600" y="220" width="0" height="0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="60" y="612" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="start">Response path: MySQL rows  →  eventMapper (JSON contract)  →  Express res.json()  →  Promise resolves  →  renderEventCard() writes the DOM  →  the user sees the cards.</text>
+</svg>

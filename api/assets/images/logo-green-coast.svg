@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Green Coast logo">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14431f"/>
+      <stop offset="100%" stop-color="#4faa5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="54" fill="url(#lg)"/>
+  <g opacity="0.25" fill="#ffffff">
+    <circle cx="196" cy="44" r="34"/>
+    <circle cx="46" cy="200" r="26"/>
+  </g>
+  <text x="120" y="150" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="86" font-weight="bold" fill="#ffffff">GC</text>
+  <text x="120" y="196" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="22" fill="#ffffff" opacity="0.9">Green Coast</text>
+</svg>

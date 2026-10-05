@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search charity events in Sydney by date, location and category.">
+    <title>Search events | Charity Events Sydney</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= HEADER + NAVIGATION (present on all pages) ============ -->
+    <header class="site-header">
+        <div class="wrap site-header__bar">
+            <a class="brand" href="index.html">
+                <span class="brand__mark" aria-hidden="true">CE</span>
+                <span class="brand__text">
+                    <span class="brand__name">Charity Events Sydney</span>
+                    <span class="brand__tagline">Fundraising events for local causes</span>
+                </span>
+            </a>
+
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                <span aria-hidden="true">☰</span>
+                <span class="sr-only">Toggle navigation menu</span>
+            </button>
+
+            <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search events</a></li>
+                    <li><a href="index.html#about">About us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ========================== PAGE BANNER ============================= -->
+        <section class="page-banner">
+            <div class="wrap">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Search events</li>
+                </ol>
+                <h1>Search charity events</h1>
+                <p>
+                    Narrow down the events that match your interests. Choose one criterion or combine
+                    several — date, location and category all work together.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <!-- Message area for API errors and form validation messages -->
+                <div id="search-message" hidden></div>
+
+                <div class="search-layout">
+                    <!-- ===================== FILTER FORM ====================== -->
+                    <aside class="filter-panel" aria-labelledby="filter-heading">
+                        <h2 id="filter-heading">Filter events</h2>
+                        <p>All fields are optional. Leave a field blank to ignore that criterion.</p>
+
+                        <form id="search-form" novalidate>
+                            <!-- The action buttons sit at the top of the form on purpose.
+                                 The filter panel is taller than a laptop viewport, and when
+                                 they were at the bottom the Search button scrolled out of
+                                 sight and could not be clicked. -->
+                            <div class="filter-actions filter-actions--top">
+                                <button type="submit" class="btn btn--primary btn--block">
+                                    <span aria-hidden="true">🔍</span> Search events
+                                </button>
+                                <!-- Required by the brief: resets every field using DOM manipulation -->
+                                <button type="button" class="btn btn--ghost btn--block" id="clear-filters">
+                                    Clear filters
+                                </button>
+                            </div>
+
+                            <!-- Criteria laid out on a grid so the whole form fits a
+                                 laptop screen without the panel scrolling. -->
+                            <div class="filter-grid">
+                            <!-- Criterion 1: date -->
+                            <fieldset class="criteria criteria--wide">
+                                <legend>1. Date</legend>
+                                <div class="date-range">
+                                    <div class="field">
+                                        <label for="date-from">From</label>
+                                        <input type="date" id="date-from" name="dateFrom">
+                                    </div>
+                                    <div class="field">
+                                        <label for="date-to">To</label>
+                                        <input type="date" id="date-to" name="dateTo">
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <span class="field-label">Quick date options</span>
+                                    <div class="checkbox-row">
+                                        <label class="checkbox">
+                                            <input type="radio" name="quickDate" value="anytime" checked>
+                                            Anytime
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="radio" name="quickDate" value="next30">
+                                            Next 30 days
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="radio" name="quickDate" value="next90">
+                                            Next 90 days
+                                        </label>
+                                    </div>
+                                    <span class="hint">Choosing a quick option fills the date fields for you.</span>
+                                </div>
+                            </fieldset>
+
+                            <!-- Criterion 2: location -->
+                            <fieldset class="criteria">
+                                <legend>2. Location</legend>
+                                <div class="field">
+                                    <label for="city">City or suburb</label>
+                                    <input type="text" id="city" name="city" list="city-options"
+                                           placeholder="e.g. Sydney, Bondi, Newtown" autocomplete="off">
+                                    <datalist id="city-options">
+                                        <option value="Sydney"></option>
+                                        <option value="Barangaroo"></option>
+                                        <option value="Bondi"></option>
+                                        <option value="Coogee"></option>
+                                        <option value="Marrickville"></option>
+                                        <option value="Newtown"></option>
+                                        <option value="Petersham"></option>
+                                        <option value="Surry Hills"></option>
+                                        <option value="Ashfield"></option>
+                                        <option value="Maroubra"></option>
+                                        <option value="Darlinghurst"></option>
+                                    </datalist>
+                                    <span class="hint">Partial matches work — "syd" finds Sydney.</span>
+                                </div>
+                            </fieldset>
+
+                            <!-- Criterion 3: category -->
+                            <fieldset class="criteria">
+                                <legend>3. Event category</legend>
+                                <div class="field">
+                                    <label for="category">Category</label>
+                                    <select id="category" name="categoryId">
+                                        <option value="">All categories</option>
+                                        <!-- Options are loaded from GET /api/categories -->
+                                    </select>
+                                    <span class="hint" id="category-hint">Loading categories…</span>
+                                </div>
+                            </fieldset>
+
+                            <!-- Optional: only active events / include past events -->
+                            <fieldset class="criteria criteria--wide">
+                                <legend>4. Time frame</legend>
+                                <div class="checkbox-row">
+                                    <label class="checkbox">
+                                        <input type="radio" name="status" value="upcoming" checked>
+                                        Upcoming events only
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="radio" name="status" value="all">
+                                        Include past events
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="radio" name="status" value="past">
+                                        Past events only
+                                    </label>
+                                </div>
+                            </fieldset>
+                            </div>
+                        </form>
+                    </aside>
+
+                    <!-- ======================= RESULTS ======================== -->
+                    <div>
+                        <div class="results-head">
+                            <h2 id="results-heading">Upcoming events</h2>
+                            <span class="results-count" id="results-count" aria-live="polite"></span>
+                        </div>
+
+                        <!-- Chips describing the criteria currently applied -->
+                        <div class="active-filters" id="active-filters" hidden></div>
+
+                        <!-- Results are injected here by js/search.js -->
+                        <div class="event-grid" id="results-container" aria-live="polite">
+                            <div class="loading-state">
+                                <span class="spinner" aria-hidden="true"></span>
+                                <span>Loading events…</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================== FOOTER ================================= -->
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <h3>Charity Events Sydney</h3>
+                    <p>
+                        A single place to discover fundraising events run by local charitable organisations.
+                        Built as a student assessment project for PROG2002 Web Development II.
+                    </p>
+                </div>
+                <div>
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="search.html">Search events</a></li>
+                        <li><a href="index.html#about">About us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Follow</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span data-current-year>2025</span> Charity Events Sydney · Sample data for assessment purposes</span>
+                <span>PROG2002 Assessment 2 · Individual submission</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

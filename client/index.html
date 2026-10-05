@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Charity Events Sydney - browse and register for upcoming charity galas, fun runs, auctions and concerts raising funds for local causes.">
+    <title>Home | Charity Events Sydney</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= HEADER + NAVIGATION (present on all pages) ============ -->
+    <header class="site-header">
+        <div class="wrap site-header__bar">
+            <a class="brand" href="index.html">
+                <span class="brand__mark" aria-hidden="true">CE</span>
+                <span class="brand__text">
+                    <span class="brand__name">Charity Events Sydney</span>
+                    <span class="brand__tagline">Fundraising events for local causes</span>
+                </span>
+            </a>
+
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                <span aria-hidden="true">☰</span>
+                <span class="sr-only">Toggle navigation menu</span>
+            </button>
+
+            <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search events</a></li>
+                    <li><a href="index.html#about">About us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ================= HERO (static, hard-coded content) ================= -->
+        <section class="hero">
+            <div class="wrap">
+                <div class="hero__inner">
+                    <h1>Every ticket tells a story</h1>
+                    <p>
+                        Charity Events Sydney brings together the Harbour Lights Foundation, Green Coast
+                        Conservation Trust and Open Table Community Kitchen. Browse their upcoming galas,
+                        fun runs, auctions and concerts, then register to turn a night out into real change
+                        for families, coastlines and neighbours in our city.
+                    </p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary btn--lg" href="#events">Browse upcoming events</a>
+                        <a class="btn btn--ghost btn--lg" href="search.html"
+                           style="background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.4); color:#fff;">
+                            Search events
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Live figures, filled from the API by js/home.js -->
+                <div class="hero-stats" id="hero-stats" hidden>
+                    <div class="hero-stat">
+                        <span class="hero-stat__value" id="stat-upcoming">–</span>
+                        <span class="hero-stat__label">Upcoming events</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat__value" id="stat-categories">–</span>
+                        <span class="hero-stat__label">Event categories</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat__value" id="stat-organisations">–</span>
+                        <span class="hero-stat__label">Charitable organisations</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat__value" id="stat-raised">–</span>
+                        <span class="hero-stat__label">Raised towards goals</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MISSION (static, hard-coded content) ============== -->
+        <section class="section" id="about">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Our mission</h2>
+                    <p>
+                        We connect people who want to give with the causes that need them most. Every event
+                        listed on this website is hosted by a registered charitable organisation, and every
+                        ticket purchased is treated as a donation towards a specific, published goal.
+                    </p>
+                </div>
+
+                <div class="event-grid">
+                    <article class="card" style="margin:0;">
+                        <h3>🎯 Every goal is published</h3>
+                        <p class="text-muted" style="margin:0;">
+                            Each event shows exactly how much it is trying to raise and how far it has come,
+                            so donors can see where their money is going.
+                        </p>
+                    </article>
+                    <article class="card" style="margin:0;">
+                        <h3>🤝 Local organisations only</h3>
+                        <p class="text-muted" style="margin:0;">
+                            All events are hosted by vetted charitable organisations working within our city
+                            and its surrounding regions.
+                        </p>
+                    </article>
+                    <article class="card" style="margin:0;">
+                        <h3>🔍 Policy-checked listings</h3>
+                        <p class="text-muted" style="margin:0;">
+                            Events that do not meet our fundraising and licensing policy are suspended and are
+                            never shown on this website.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ DYNAMIC EVENT LISTING (data from the REST API) ========= -->
+        <section class="section section--tint" id="events">
+            <div class="wrap">
+                <div class="results-head">
+                    <div>
+                        <h2 style="margin-bottom:.2em;">Upcoming charity events</h2>
+                        <p class="text-muted" style="margin:0;">
+                            Loaded live from the Charity Events REST API · <code>GET /api/events</code>
+                        </p>
+                    </div>
+                    <a class="btn btn--ghost" href="search.html">Filter these events</a>
+                </div>
+
+                <!-- Error / status messages are injected here by the DOM -->
+                <div id="events-message" hidden></div>
+
+                <!-- Event cards are injected here -->
+                <div class="event-grid" id="events-container" aria-live="polite">
+                    <div class="loading-state">
+                        <span class="spinner" aria-hidden="true"></span>
+                        <span>Loading upcoming events…</span>
+                    </div>
+                </div>
+
+                <div style="text-align:center; margin-top:34px;">
+                    <button type="button" class="btn btn--ghost" id="toggle-past-events" aria-expanded="false">
+                        Show past events
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================== ORGANISATIONS (from the API) ==================== -->
+        <section class="section" id="organisations">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>The organisations behind these events</h2>
+                    <p>Each organisation publishes its mission and its upcoming events on this platform.</p>
+                </div>
+
+                <div id="organisations-message" hidden></div>
+                <div class="event-grid" id="organisations-container" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT (static content) ====================== -->
+        <section class="section section--tint" id="contact">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Contact us</h2>
+                    <p>
+                        Questions about an event, a donation or hosting your own fundraiser? Our team replies
+                        within two business days.
+                    </p>
+                </div>
+
+                <div class="event-grid">
+                    <article class="card" style="margin:0;">
+                        <h3>Visit or call</h3>
+                        <ul class="fact-list">
+                            <li><span class="icon" aria-hidden="true">🏢</span>
+                                <span><span class="fact-label">Office</span>
+                                <span class="fact-value">Level 4, 88 Pitt Street, Sydney NSW 2000</span></span></li>
+                            <li><span class="icon" aria-hidden="true">📞</span>
+                                <span><span class="fact-label">Phone</span>
+                                <span class="fact-value">02 5550 1000</span></span></li>
+                            <li><span class="icon" aria-hidden="true">🕘</span>
+                                <span><span class="fact-label">Hours</span>
+                                <span class="fact-value">Monday to Friday, 9:00 am – 5:00 pm AEST</span></span></li>
+                        </ul>
+                    </article>
+
+                    <article class="card" style="margin:0;">
+                        <h3>Email the team</h3>
+                        <p class="text-muted">
+                            Send us the event name and your question and we will route it to the right
+                            organisation.
+                        </p>
+                        <p><a class="btn btn--primary" href="mailto:hello@charityeventssydney.org.au">hello@charityeventssydney.org.au</a></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================== FOOTER ================================= -->
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <h3>Charity Events Sydney</h3>
+                    <p>
+                        A single place to discover fundraising events run by local charitable organisations.
+                        Built as a student assessment project for PROG2002 Web Development II.
+                    </p>
+                </div>
+                <div>
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="search.html">Search events</a></li>
+                        <li><a href="index.html#about">About us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Follow</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span data-current-year>2025</span> Charity Events Sydney · Sample data for assessment purposes</span>
+                <span>PROG2002 Assessment 2 · Individual submission</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts: config -> api -> ui -> page script -->
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

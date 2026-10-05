@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full details of a charity event - description, ticket information, registration and fundraising progress.">
+    <title>Event details | Charity Events Sydney</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= HEADER + NAVIGATION (present on all pages) ============ -->
+    <header class="site-header">
+        <div class="wrap site-header__bar">
+            <a class="brand" href="index.html">
+                <span class="brand__mark" aria-hidden="true">CE</span>
+                <span class="brand__text">
+                    <span class="brand__name">Charity Events Sydney</span>
+                    <span class="brand__tagline">Fundraising events for local causes</span>
+                </span>
+            </a>
+
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                <span aria-hidden="true">☰</span>
+                <span class="sr-only">Toggle navigation menu</span>
+            </button>
+
+            <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search events</a></li>
+                    <li><a href="index.html#about">About us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ======================= EVENT HEADER BANNER ======================== -->
+        <section class="detail-hero">
+            <div class="wrap">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search events</a></li>
+                    <li id="breadcrumb-current">Event details</li>
+                </ol>
+
+                <div class="detail-hero__badges" id="detail-badges"></div>
+                <h1 id="event-title">Loading event…</h1>
+                <div class="detail-hero__meta" id="event-quick-meta"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <!-- Messages (loading problems, event not found, API errors) -->
+                <div id="detail-message" hidden></div>
+
+                <div class="detail-layout" id="detail-layout" hidden>
+                    <!-- ==================== MAIN COLUMN ==================== -->
+                    <div>
+                        <figure class="detail-figure" id="detail-figure">
+                            <img id="event-image" src="assets/images/hero-home.svg" alt="">
+                        </figure>
+
+                        <article class="card">
+                            <h2>About this event</h2>
+                            <p id="event-description"></p>
+                        </article>
+
+                        <section class="card goal-card">
+                            <h2>Goal vs. progress</h2>
+                            <p class="goal-statement" id="event-purpose"></p>
+
+                            <div class="progress">
+                                <div class="progress__head">
+                                    <span>Raised so far</span>
+                                    <strong id="goal-percent">0%</strong>
+                                </div>
+                                <div class="progress__track" role="progressbar"
+                                     aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+                                     id="goal-progressbar">
+                                    <div class="progress__fill" id="goal-fill" style="width:0%"></div>
+                                </div>
+                                <div class="progress__figures">
+                                    <span><strong id="goal-raised">$0</strong> raised</span>
+                                    <span>Goal: <strong id="goal-target">$0</strong></span>
+                                </div>
+                            </div>
+                            <p class="text-muted" style="margin-top:14px; margin-bottom:0;" id="goal-remaining"></p>
+                        </section>
+
+                        <section class="card">
+                            <h2>Event details</h2>
+                            <ul class="fact-list">
+                                <li>
+                                    <span class="icon" aria-hidden="true">📅</span>
+                                    <span>
+                                        <span class="fact-label">Date and time</span>
+                                        <span class="fact-value" id="detail-datetime">–</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon" aria-hidden="true">📍</span>
+                                    <span>
+                                        <span class="fact-label">Venue</span>
+                                        <span class="fact-value" id="detail-venue">–</span>
+                                        <span class="text-muted" id="detail-address"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon" aria-hidden="true">🏷️</span>
+                                    <span>
+                                        <span class="fact-label">Category</span>
+                                        <span class="fact-value" id="detail-category">–</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon" aria-hidden="true">🎟️</span>
+                                    <span>
+                                        <span class="fact-label">Tickets</span>
+                                        <span class="fact-value" id="detail-tickets">–</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <!-- ====================== SIDEBAR ====================== -->
+                    <aside class="sidebar-card">
+                        <!-- Ticket / registration box -->
+                        <div class="ticket-box">
+                            <span class="ticket-label">Ticket price</span>
+                            <span class="ticket-price" id="ticket-price">–</span>
+                            <p class="ticket-note" id="ticket-note">Every ticket is treated as a donation.</p>
+
+                            <!-- Required by the brief: opens a modal stating the feature is under construction -->
+                            <button type="button" class="btn btn--primary btn--block btn--lg"
+                                    id="register-button" aria-haspopup="dialog">
+                                Register
+                            </button>
+                        </div>
+
+                        <!-- Host organisation -->
+                        <section class="card org-card" style="margin-top:24px;">
+                            <h3>Hosted by</h3>
+                            <div class="org-card__head">
+                                <img class="org-card__logo" id="org-logo"
+                                     src="assets/images/logo-harbour-lights.svg" alt="">
+                                <div>
+                                    <strong id="org-name">–</strong>
+                                    <div class="text-muted" style="font-size:.85rem;" id="org-mission"></div>
+                                </div>
+                            </div>
+                            <ul class="org-card__contact">
+                                <li>📧 <a href="#" id="org-email">–</a></li>
+                                <li>📞 <span id="org-phone">–</span></li>
+                                <li>🌐 <a href="#" id="org-website" target="_blank" rel="noopener">Organisation website</a></li>
+                            </ul>
+                        </section>
+
+                        <div style="display:grid; gap:10px;">
+                            <a class="btn btn--ghost btn--block" href="search.html">← Back to search</a>
+                            <a class="btn btn--ghost btn--block" href="index.html">← Back to home</a>
+                        </div>
+                    </aside>
+                </div>
+
+                <!-- Loading placeholder shown before the API responds -->
+                <div class="loading-state" id="detail-loading">
+                    <span class="spinner" aria-hidden="true"></span>
+                    <span>Loading event details…</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== "UNDER CONSTRUCTION" MODAL ====================== -->
+    <div class="modal-backdrop" id="register-modal" role="dialog" aria-modal="true"
+         aria-labelledby="register-modal-title" aria-hidden="true" data-modal-close>
+        <div class="modal">
+            <div class="modal__icon" aria-hidden="true">🚧</div>
+            <h2 id="register-modal-title">Registration coming soon</h2>
+            <p><strong>This feature is currently under construction.</strong></p>
+            <p class="text-muted" style="margin-bottom:0;">
+                Ticket purchasing and attendee registration will be added in Assessment 3.
+                In the meantime, contact the host organisation to register your interest.
+            </p>
+            <div class="modal__actions">
+                <button type="button" class="btn btn--primary" data-modal-close>OK, got it</button>
+                <a class="btn btn--ghost" id="modal-org-link" href="index.html#contact">Contact the organiser</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================== FOOTER ================================= -->
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <h3>Charity Events Sydney</h3>
+                    <p>
+                        A single place to discover fundraising events run by local charitable organisations.
+                        Built as a student assessment project for PROG2002 Web Development II.
+                    </p>
+                </div>
+                <div>
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="search.html">Search events</a></li>
+                        <li><a href="index.html#about">About us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Follow</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span data-current-year>2025</span> Charity Events Sydney · Sample data for assessment purposes</span>
+                <span>PROG2002 Assessment 2 · Individual submission</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/event.js"></script>
+</body>
+</html>

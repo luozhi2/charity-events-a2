@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 560" width="940" height="560" role="img" aria-label="Wireframes">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5A6B78"/>
+    </marker>
+    <marker id="arrowStart" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 10 0 L 0 5 L 10 10 z" fill="#5A6B78"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E08A2F"/>
+    </marker>
+  </defs>
+  <rect width="940" height="560" fill="#FFFFFF"/>
+<text x="470.0" y="28" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0A2A48" text-anchor="middle" font-weight="bold">Wireframes of the three required pages (low fidelity)</text>
+<rect x="30" y="50" width="275" height="440" rx="6" fill="#FFFFFF" stroke="#0F3C66" stroke-width="2"/>
+<rect x="30" y="50" width="275" height="28" rx="6" fill="#0F3C66" stroke="#0F3C66" stroke-width="2"/>
+<rect x="30" y="66" width="275" height="12" rx="0" fill="#0F3C66" stroke="#0F3C66" stroke-width="0"/>
+<text x="167.5" y="69" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle" font-weight="bold">HOME  index.html</text>
+<text x="167.5" y="510" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle" font-style="italic">Static organisation info + dynamic event listing (API)</text>
+<rect x="38" y="84" width="259" height="22" rx="3" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="46" y="99" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#16232E" text-anchor="start" font-weight="bold">LOGO</text>
+<text x="289" y="99" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#5A6B78" text-anchor="end">Home · Search · About</text>
+<rect x="38" y="112" width="259" height="64" rx="4" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="167.5" y="142.0" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#16232E" text-anchor="middle" font-weight="bold">HERO</text>
+<text x="167.5" y="157.0" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="middle">mission + "Browse events" CTA</text>
+<rect x="38" y="180" width="80" height="26" rx="3" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="78" y="191" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#16232E" text-anchor="middle" font-weight="bold">10</text>
+<text x="78" y="202" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#5A6B78" text-anchor="middle">upcoming</text>
+<rect x="124" y="180" width="80" height="26" rx="3" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="164" y="191" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#16232E" text-anchor="middle" font-weight="bold">5</text>
+<text x="164" y="202" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#5A6B78" text-anchor="middle">categories</text>
+<rect x="210" y="180" width="87" height="26" rx="3" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="253" y="191" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#16232E" text-anchor="middle" font-weight="bold">$186,850</text>
+<text x="253" y="202" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#5A6B78" text-anchor="middle">raised</text>
+<rect x="38" y="212" width="259" height="34" rx="4" fill="#F2F5F8" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="167.5" y="233.0" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#16232E" text-anchor="middle">MISSION  ·  3 value cards</text>
+<text x="42" y="256" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#0F3C66" text-anchor="start" font-weight="bold">UPCOMING EVENTS  —  GET /api/events</text>
+<rect x="38" y="264" width="79" height="106" rx="4" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="42" y="268" width="71" height="34" rx="3" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="77" y="288" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#5A6B78" text-anchor="middle">image</text>
+<text x="44" y="314" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#16232E" text-anchor="start" font-weight="bold">Event name</text>
+<text x="44" y="325" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">summary text</text>
+<text x="44" y="342" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">date · venue</text>
+<rect x="44" y="348" width="67" height="6" rx="3" fill="#C4D0DA" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="44" y="348" width="40" height="6" rx="3" fill="#17998F" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="44" y="364" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#0F3C66" text-anchor="start">$45.00   View →</text>
+<rect x="125" y="264" width="79" height="106" rx="4" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="129" y="268" width="71" height="34" rx="3" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="164" y="288" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#5A6B78" text-anchor="middle">image</text>
+<text x="131" y="314" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#16232E" text-anchor="start" font-weight="bold">Event name</text>
+<text x="131" y="325" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">summary text</text>
+<text x="131" y="342" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">date · venue</text>
+<rect x="131" y="348" width="67" height="6" rx="3" fill="#C4D0DA" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="131" y="348" width="40" height="6" rx="3" fill="#17998F" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="131" y="364" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#0F3C66" text-anchor="start">$45.00   View →</text>
+<rect x="212" y="264" width="79" height="106" rx="4" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="216" y="268" width="71" height="34" rx="3" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="251" y="288" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#5A6B78" text-anchor="middle">image</text>
+<text x="218" y="314" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#16232E" text-anchor="start" font-weight="bold">Event name</text>
+<text x="218" y="325" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">summary text</text>
+<text x="218" y="342" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">date · venue</text>
+<rect x="218" y="348" width="67" height="6" rx="3" fill="#C4D0DA" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="218" y="348" width="40" height="6" rx="3" fill="#17998F" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="218" y="364" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#0F3C66" text-anchor="start">$45.00   View →</text>
+<rect x="38" y="378" width="259" height="22" rx="3" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="167.5" y="392" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#5A6B78" text-anchor="middle">Show past events  (toggle)</text>
+<rect x="38" y="406" width="259" height="40" rx="4" fill="#F2F5F8" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="167.5" y="430.0" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#16232E" text-anchor="middle">ORGANISATIONS  —  GET /api/organisations</text>
+<rect x="38" y="452" width="259" height="40" rx="4" fill="#F2F5F8" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="167.5" y="476.0" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#16232E" text-anchor="middle">CONTACT  (static, hard-coded)</text>
+<rect x="38" y="498" width="259" height="34" rx="3" fill="#0A2A48" stroke="#0A2A48" stroke-width="1.5"/>
+<text x="167.5" y="518" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#FFFFFF" text-anchor="middle">footer</text>
+<rect x="332" y="50" width="275" height="440" rx="6" fill="#FFFFFF" stroke="#0F3C66" stroke-width="2"/>
+<rect x="332" y="50" width="275" height="28" rx="6" fill="#0F3C66" stroke="#0F3C66" stroke-width="2"/>
+<rect x="332" y="66" width="275" height="12" rx="0" fill="#0F3C66" stroke="#0F3C66" stroke-width="0"/>
+<text x="469.5" y="69" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle" font-weight="bold">SEARCH  search.html</text>
+<text x="469.5" y="510" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle" font-style="italic">Three criteria, combinable, with validation (API)</text>
+<rect x="340" y="84" width="259" height="22" rx="3" fill="#F1EAF8" stroke="#6B3FA0" stroke-width="1.5"/>
+<text x="348" y="99" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#16232E" text-anchor="start" font-weight="bold">LOGO</text>
+<text x="591" y="99" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#5A6B78" text-anchor="end">Home · Search · About</text>
+<rect x="340" y="112" width="259" height="34" rx="3" fill="#F1EAF8" stroke="#6B3FA0" stroke-width="1.5"/>
+<text x="348" y="130" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#6B3FA0" text-anchor="start" font-weight="bold">BANNER  Search charity events</text>
+<rect x="340" y="152" width="118" height="270" rx="4" fill="#F2F5F8" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="348" y="168" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#16232E" text-anchor="start" font-weight="bold">FILTER EVENTS</text>
+<text x="348" y="184" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#0F3C66" text-anchor="start" font-weight="bold">1. DATE</text>
+<rect x="348" y="189" width="50" height="15" rx="2" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="352" y="200" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">From</text>
+<rect x="402" y="189" width="48" height="15" rx="2" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="406" y="200" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">To</text>
+<text x="348" y="216" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">● Anytime  ○ 30d  ○ 90d</text>
+<text x="348" y="236" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#0F3C66" text-anchor="start" font-weight="bold">2. LOCATION</text>
+<rect x="348" y="241" width="102" height="15" rx="2" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="352" y="252" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">city / suburb  (datalist)</text>
+<text x="348" y="270" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#0F3C66" text-anchor="start" font-weight="bold">3. EVENT CATEGORY</text>
+<rect x="348" y="275" width="102" height="15" rx="2" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="352" y="286" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">drop-down ▾  (from API)</text>
+<text x="348" y="304" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#0F3C66" text-anchor="start" font-weight="bold">4. TIME FRAME</text>
+<text x="348" y="316" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">● Upcoming only</text>
+<text x="348" y="326" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">○ Include past   ○ Past only</text>
+<rect x="348" y="338" width="102" height="20" rx="10" fill="#E08A2F" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="399" y="352" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Search events</text>
+<rect x="348" y="363" width="102" height="20" rx="10" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="399" y="377" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#0F3C66" text-anchor="middle">Clear filters  (DOM reset)</text>
+<text x="348" y="398" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#8C2137" text-anchor="start" font-style="italic">error / message area</text>
+<text x="466" y="168" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#16232E" text-anchor="start" font-weight="bold">RESULTS</text>
+<text x="466" y="182" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#5A6B78" text-anchor="start">3 events found</text>
+<rect x="466" y="188" width="60" height="14" rx="7" fill="#E3F4F1" stroke="#17998F" stroke-width="1.5"/>
+<text x="496" y="198" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#0E6B62" text-anchor="middle">chip: Fun Run</text>
+<rect x="466" y="208" width="62" height="84" rx="3" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="469" y="211" width="56" height="26" rx="2" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="472" y="248" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#16232E" text-anchor="start" font-weight="bold">Event name</text>
+<text x="472" y="258" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#5A6B78" text-anchor="start">summary</text>
+<text x="472" y="270" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#5A6B78" text-anchor="start">date · venue</text>
+<rect x="472" y="276" width="50" height="5" rx="2" fill="#C4D0DA" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="472" y="276" width="30" height="5" rx="2" fill="#17998F" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="472" y="289" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#0F3C66" text-anchor="start">$45   View →</text>
+<rect x="534" y="208" width="62" height="84" rx="3" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="537" y="211" width="56" height="26" rx="2" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="540" y="248" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#16232E" text-anchor="start" font-weight="bold">Event name</text>
+<text x="540" y="258" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#5A6B78" text-anchor="start">summary</text>
+<text x="540" y="270" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#5A6B78" text-anchor="start">date · venue</text>
+<rect x="540" y="276" width="50" height="5" rx="2" fill="#C4D0DA" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="540" y="276" width="30" height="5" rx="2" fill="#17998F" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="540" y="289" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#0F3C66" text-anchor="start">$45   View →</text>
+<rect x="466" y="300" width="62" height="84" rx="3" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="469" y="303" width="56" height="26" rx="2" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="472" y="340" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#16232E" text-anchor="start" font-weight="bold">Event name</text>
+<text x="472" y="350" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#5A6B78" text-anchor="start">summary</text>
+<text x="472" y="362" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#5A6B78" text-anchor="start">date · venue</text>
+<rect x="472" y="368" width="50" height="5" rx="2" fill="#C4D0DA" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="472" y="368" width="30" height="5" rx="2" fill="#17998F" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="472" y="381" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#0F3C66" text-anchor="start">$45   View →</text>
+<rect x="534" y="300" width="62" height="84" rx="3" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="537" y="303" width="56" height="26" rx="2" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="540" y="340" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#16232E" text-anchor="start" font-weight="bold">Event name</text>
+<text x="540" y="350" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#5A6B78" text-anchor="start">summary</text>
+<text x="540" y="362" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#5A6B78" text-anchor="start">date · venue</text>
+<rect x="540" y="368" width="50" height="5" rx="2" fill="#C4D0DA" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="540" y="368" width="30" height="5" rx="2" fill="#17998F" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="540" y="381" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#0F3C66" text-anchor="start">$45   View →</text>
+<rect x="340" y="498" width="259" height="34" rx="3" fill="#0A2A48" stroke="#0A2A48" stroke-width="1.5"/>
+<text x="469.5" y="518" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#FFFFFF" text-anchor="middle">footer</text>
+<rect x="634" y="50" width="275" height="440" rx="6" fill="#FFFFFF" stroke="#0F3C66" stroke-width="2"/>
+<rect x="634" y="50" width="275" height="28" rx="6" fill="#0F3C66" stroke="#0F3C66" stroke-width="2"/>
+<rect x="634" y="66" width="275" height="12" rx="0" fill="#0F3C66" stroke="#0F3C66" stroke-width="0"/>
+<text x="771.5" y="69" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle" font-weight="bold">EVENT DETAIL  event.html</text>
+<text x="771.5" y="510" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6B78" text-anchor="middle" font-style="italic">One event, passed as ?eventId=3 (API)</text>
+<rect x="642" y="84" width="259" height="22" rx="3" fill="#0A2A48" stroke="#0A2A48" stroke-width="1.5"/>
+<text x="650" y="99" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#FFFFFF" text-anchor="start" font-weight="bold">LOGO</text>
+<text x="893" y="99" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#F2F5F8" text-anchor="end">Home · Search · About</text>
+<rect x="642" y="112" width="259" height="40" rx="3" fill="#0A2A48" stroke="#0A2A48" stroke-width="1.5"/>
+<text x="650" y="128" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#F2F5F8" text-anchor="start">Home › Search › Event name</text>
+<text x="650" y="142" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#FFFFFF" text-anchor="start" font-weight="bold">EVENT TITLE  + date / venue / goal</text>
+<rect x="642" y="158" width="160" height="66" rx="4" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="722" y="195" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#5A6B78" text-anchor="middle">event image</text>
+<rect x="812" y="158" width="89" height="66" rx="4" fill="#0F3C66" stroke="#0F3C66" stroke-width="1.5"/>
+<text x="856" y="176" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#F2F5F8" text-anchor="middle">TICKET</text>
+<text x="856" y="192" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="bold">$45.00</text>
+<rect x="818" y="200" width="77" height="16" rx="8" fill="#E08A2F" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="856" y="212" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#FFFFFF" text-anchor="middle" font-weight="bold">REGISTER</text>
+<rect x="642" y="232" width="160" height="46" rx="4" fill="#F2F5F8" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="722.0" y="253.0" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#16232E" text-anchor="middle" font-weight="bold">ABOUT THIS EVENT</text>
+<text x="722.0" y="268.0" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="middle">full description</text>
+<rect x="642" y="282" width="160" height="52" rx="4" fill="#E3F4F1" stroke="#17998F" stroke-width="1.5"/>
+<text x="648" y="296" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#0E6B62" text-anchor="start" font-weight="bold">GOAL vs. PROGRESS</text>
+<text x="648" y="308" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">purpose statement</text>
+<rect x="648" y="314" width="148" height="7" rx="3" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<rect x="648" y="314" width="88" height="7" rx="3" fill="#17998F" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="648" y="330" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="start">$28,450 raised  ·  goal $60,000</text>
+<rect x="642" y="338" width="160" height="62" rx="4" fill="#F2F5F8" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="722.0" y="367.0" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#16232E" text-anchor="middle" font-weight="bold">EVENT DETAILS</text>
+<text x="722.0" y="382.0" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#5A6B78" text-anchor="middle">date · venue · category · tickets</text>
+<rect x="812" y="232" width="89" height="66" rx="4" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="856" y="248" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#0F3C66" text-anchor="middle" font-weight="bold">HOSTED BY</text>
+<rect x="820" y="254" width="24" height="24" rx="4" fill="#EAF1F7" stroke="#9DBBD6" stroke-width="1.5"/>
+<text x="856" y="270" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#5A6B78" text-anchor="middle">org logo</text>
+<text x="856" y="288" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#5A6B78" text-anchor="middle">organisation + contact</text>
+<rect x="812" y="304" width="89" height="18" rx="3" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="856" y="316" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#0F3C66" text-anchor="middle">← Back to search</text>
+<rect x="812" y="326" width="89" height="18" rx="3" fill="#FFFFFF" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="856" y="338" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#0F3C66" text-anchor="middle">← Back to home</text>
+<rect x="812" y="350" width="89" height="50" rx="4" fill="#FDF1E0" stroke="#E08A2F" stroke-width="1.5"/>
+<text x="856" y="366" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#8A5713" text-anchor="middle" font-weight="bold">MODAL on Register</text>
+<text x="856" y="380" font-family="Arial, Helvetica, sans-serif" font-size="6" fill="#8A5713" text-anchor="middle">"This feature is</text>
+<text x="856" y="391" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="#8A5713" text-anchor="middle">currently under construction."</text>
+<rect x="642" y="408" width="259" height="44" rx="3" fill="#F2F5F8" stroke="#C4D0DA" stroke-width="1.5"/>
+<text x="771.5" y="426" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#5A6B78" text-anchor="middle">Loading state: skeleton cards</text>
+<text x="771.5" y="440" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#5A6B78" text-anchor="middle">Error state: DOM message + retry</text>
+<rect x="642" y="498" width="259" height="34" rx="3" fill="#0A2A48" stroke="#0A2A48" stroke-width="1.5"/>
+<text x="771.5" y="518" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="#FFFFFF" text-anchor="middle">footer</text>
+<text x="30" y="512" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#0F3C66" text-anchor="start" font-weight="bold">Shared across all three pages:</text>
+<text x="30" y="530" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="start">identical sticky navigation with the current page highlighted  ·  breadcrumbs on inner pages  ·  responsive single-column layout below 760 px  ·  ARIA landmarks and live regions.</text>
+<text x="30" y="548" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5A6B78" text-anchor="start">Card anatomy: image and status badge  |  event name  |  summary  |  date, venue and category  |  fundraising progress bar  |  ticket price and detail link.</text>
+</svg>
